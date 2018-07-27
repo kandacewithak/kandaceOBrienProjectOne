@@ -1,0 +1,728 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */
+input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+
+* { box-sizing: border-box; }
+
+
+/* base styles 
+for the pages */
+
+html {
+  font-size: 62.5%;
+  font-family: 'Raleway', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+ul {
+  list-style: none;
+}
+
+h1, h2, h3 {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+h2 {
+  margin: 0;
+}
+
+p {
+  color: grey;
+  line-height: 20px;
+}
+
+/* end of 
+base styles */
+
+
+/* **********HOME PAGE STYLES********** */
+
+/* header styles 
+of the page */
+
+.headerHome {
+  background-image: url(../assets/headerHero.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+
+header h1 {
+  float: left;
+  width: 48%;
+  margin-left: 2%;
+  font-size: 3rem;
+}
+
+.headerNav {
+  float: left;
+  width: 44%;
+}
+
+.navIcons {
+  float: left;
+}
+
+.headerNav li {
+  float: left;
+  margin: 10px;
+}
+
+.headerNav a:hover {
+  color: #64a604;
+}
+
+.headerNav i {
+  margin: 10px;
+  font-size: 1.2rem;
+}
+
+.navIcons {
+  position: relative;
+}
+
+.number {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #64a604;
+  color: white;
+  font-size: 0.9rem;
+  position: absolute;
+  top: 15px;
+  right: 40px;
+  padding-left: 2px;
+}
+
+/* 
+main 
+section 
+styles 
+*/
+
+/* recipes section styles*/
+
+.info {
+  float: left;
+  width: 50%;
+}
+
+.recipePhoto {
+  float: left;
+  width: 50%;
+}
+
+.recipePhoto img,
+.recipeCategories img {
+  width: 100%;
+}
+
+.info {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.info h2 {
+  margin-bottom: 2%;
+}
+
+.line {
+  width: 50px;
+  height: 3px;
+  margin: 0 auto;
+  background-color: #64a604;
+}
+
+.info p {
+  width: 70%;
+  margin: 40px auto;
+}
+
+.info a {
+  background-color: #64a604;
+  padding: 10px 20px;
+  color: white;
+  font-size: 1rem;
+}
+
+.recipeCategories {
+  background-color:	#F0F0F0;
+}
+
+.recipeCategories img {
+  float: left;
+  width: 50%;
+}
+
+.categories {
+  float: left;
+  width: 46%;
+  margin: 5% 2%;
+  padding: 10px;
+}
+
+.category {
+  float: left;
+  width: 50%;
+}
+
+.category i {
+  float: left;
+  width: 10%;
+}
+
+.description {
+  float: left;
+  width: 86%;
+  margin-left: 2%;
+}
+
+.category i {
+  font-size: 2rem;
+  margin-top: 4%;
+}
+
+
+/* restaurant section styles */
+
+
+.restaurants {
+  margin: 0 auto;
+  text-align: center;
+  padding: 100px;
+}
+
+.restaurants p {
+  width: 50%;
+  margin: 2% auto;
+}
+
+.images {
+  position: relative;
+}
+
+.tables {
+  width: 30%;
+}
+
+.logo {
+  width: 10%;
+  position: absolute;
+  top: -65px;
+  right: 350px;
+}
+
+.restaurants h2 {
+  margin: 4% 0 2% 0;
+}
+
+
+/* photo gallery section styles */
+
+
+.photoGallery img {
+  float: left;
+  width: 33%;
+}
+
+
+/* 
+quote 
+section 
+syles 
+*/
+
+
+.quote {
+  padding: 75px 0;
+  background-color: #DDED9A;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.quote h2 {
+  margin-bottom: 10px;
+}
+
+.quote blockquote {
+  font-size: 1.2rem;
+  font-family: 'Lora', serif;
+  color:#2E2E2E;
+  width: 40%;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  margin: 40px auto;
+  position: relative;
+}
+
+blockquote::before {
+  content: "“";
+  font-size: 8rem;
+  color: white;
+  position: absolute;
+  top: 20px;
+  left: -40px;
+}
+
+blockquote::after {
+  content: "”";
+  font-size: 8rem;
+  color: white;
+  position: absolute;
+  bottom: -10px;
+  right: -40px;
+}
+
+.quote i {
+  color: white;
+  font-size: 2.4rem;
+  margin: 10px;
+
+}
+
+
+/* 
+footer
+styles 
+*/
+
+
+/* top portion of the footer */
+
+.footerTop {
+  background-color: #2E2E2E;
+}
+
+.footerInfo h1 {
+  margin: 0;
+  color: #64a604;
+  margin-bottom: 30px;
+}
+
+.border {
+  border-top: 1px solid	#696969;
+}
+
+.footerTop h2 {
+  color: white;
+}
+
+.footerWrapper {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.footerInfo, .recentPosts, .subscribeNow {
+  float: left;
+  width: 25%;
+  margin: 5% 4%;
+}
+
+.recentPosts li {
+  color: grey;
+  padding: 7px 0;
+}
+
+.subscribeEmail {
+  margin-bottom: 30px;
+}
+
+.subscribeNow input[type=email] {
+  border: none;
+  background-color: dimgrey;
+  color: #F0F0F0;
+  padding: 10px 5px;
+  width: 75%;
+  margin: 0;
+}
+
+.subscribeNow button {
+  border: none;
+  background-color: #64a604;
+  width: 20%;
+  padding: 10px 5px;
+  margin: 0;
+}
+
+.footerTop h2 {
+  margin-bottom: 30px;
+}
+
+.footerTop i {
+  color: white;
+}
+
+.icons {
+  border-top: 1px solid #696969;
+  padding-top: 10px; 
+}
+
+.icons i {
+  font-size: 1.2rem;
+  margin-right: 10px;
+}
+
+
+/* bottom portion of the footer */
+
+.footerBottom {
+  background-color: #252525;
+  clear: both;
+}
+
+.footerBottom p {
+  padding-left: 30px;
+  margin: 0;
+}
+
+.footerBottom span {
+  color: #64a604;
+  text-transform: uppercase;
+}
+
+
+/* ******BLOG PAGE STYLES******** */
+
+
+.headerBlog {
+  background-image: url(../assets/blogHero.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+}
+
+/* 
+blog 
+main 
+section 
+*/
+
+
+/* recipe section styles */
+
+.wrapper {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.recipes {
+  margin-top: 100px;
+}
+
+.pineappleChicken, .share {
+  border-bottom: 1px solid #F0F0F0;
+}
+
+.pineappleChicken p {
+  padding: 5px 0;
+}
+
+.tags h3 {
+  float: left;
+  margin-right: 5px;
+}
+
+.tags p {
+  float: left;
+}
+
+.share {
+  margin-bottom: 20px;
+}
+
+.share h3 {
+  float: left;
+  margin-right: 10px;
+}
+
+.shareIcons {
+  float: left;
+  padding-top: 12px;
+}
+
+.shareIcons i {
+  margin-right: 12px;
+  color: grey;
+  font-size: 1.2rem;
+}
+
+.shareIcons i:hover {
+  transform: 1.5rem;
+  color: #64a604;
+}
+
+
+/* about the blogger section styles */
+
+
+.blogger {
+  background-color: #F0F0F0;
+  width: 77%;
+  padding: 38px;
+}
+
+.about img, 
+.blogger {
+  float: left;
+}
+
+.about img {
+  width: 20%;
+  margin-right: 3%;
+}
+
+.about {
+  margin-bottom: 25px;
+}
+
+.blogPosts h2 {
+  margin: 0;
+  border-top: 1px solid #F0F0F0;
+  margin-bottom: 30px;
+}
+
+.posts {
+  float: left;
+  width: 32.33%;
+  margin-bottom: 20px;
+}
+
+.postTwo {
+  margin: 0 1.5%;
+}
+
+.blogPosts h2 {
+  padding-top: 30px;
+}
+
+.posts img {
+  width: 100%;
+}
+
+.posts h4 {
+  text-transform: uppercase;
+}
+
+.posts span {
+  color: dimgrey;
+  font-weight: 600;
+}
+
+.blogPosts {
+  border-bottom: 1px solid #F0F0F0;
+  margin-bottom: 30px;
+}
+
+
+/* comment section */
+
+
+.comments {
+  clear: both;
+}
+
+.comments h2 {
+  margin-bottom: 30px;
+}
+
+.comment {
+  margin-bottom: 20px;
+}
+
+
+.comment img {
+  float: left;
+  width: 10%;
+  margin-right: 5%;
+}
+
+.comment .speech-bubble {
+  float: left;
+  width: 85%;
+}
+
+.speech-bubble { 
+  position: relative; 
+  background: #F0F0F0; 
+  border-radius: .4em; 
+  padding: 10px;
+} 
+
+.speech-bubble:after { 
+  content: ''; 
+  position: absolute; 
+  left: 0; 
+  top: 20%; 
+  width: 0; 
+  height: 0; 
+  border: 17px solid transparent; 
+  border-right-color: #F0F0F0; 
+  border-left: 0; 
+  border-bottom: 0; 
+  margin-top: -8.5px; 
+  margin-left: -17px; 
+}
+
+.commentForm {
+  clear: both;
+  margin: 50px 0;
+}
+
+.commentForm h2 {
+  margin: 5px 0;
+}
+
+.speech-bubble span,
+.speech-bubble p:nth-of-type(3) {
+  font-weight: 600;
+}
+
+.commentForm label {
+  display: none;
+}
+
+.commentForm input[type=text] {
+  width: 31%;
+  border: 1px solid #F0F0F0;
+  float: left;
+  padding: 10px;
+}
+
+.commentForm input[type=email] {
+  width: 32%;
+  border: 1px solid #F0F0F0;
+  margin: 0 3%;
+  padding: 10px;
+  float: left;
+}
+
+.commentForm textarea {
+  width: 100%;
+  min-height: 110px;
+  border: 1px solid #F0F0F0;
+  margin: 10px 0;
+  padding: 10px;
+  color: grey;
+}
+
+.commentForm button {
+  width: 15%;
+  background-color: #64a604;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+
+/* ****CONTACT PAGE STYLES**** */
+
+
+.headerContact {
+  background-image: url(../assets/contactHeader.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+}
+
+.contactForm {
+  float: left;
+  width: 75%;
+  padding: 50px 25px;
+}
+
+.contactDetails {
+  float: left;
+  width: 25%;
+  background-color: #F0F0F0;
+  padding: 50px 25px;
+}
+
+.formContainer {
+  float: right;
+  width: 60%;
+}
+
+.name, .formEmail {
+  float: left;
+  width: 48.5%;
+  border: none;
+  background-color: #F0F0F0;
+  padding: 10px;
+}
+
+.name {
+  margin-right: 3%;
+}
+
+.formContainer h2 {
+  margin-bottom: 20px;
+}
+
+.subject {
+  border: none;
+  background-color: #F0F0F0;
+  padding: 10px;
+  width: 100%;
+  margin: 15px 0;
+}
+
+.message {
+  width: 100%;
+  min-height: 175px;
+  border: none;
+  padding: 10px;
+  background-color: #F0F0F0;
+}
+
+.contactForm label {
+  display: none;
+}
+
+.details, .hours {
+  margin-bottom: 50px;
+}
+
+.contactForm button {
+  width: 20%;
+  border: none;
+  background-color: white;
+  padding: 10px 20px;
+  color: #64a604;
+  font-size: 1rem;
+}
+
+.mainHero img {
+  width: 100%;
+  min-height: 150px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
