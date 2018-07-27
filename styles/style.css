@@ -669,7 +669,7 @@ section
 }
 
 .formContainer h2 {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .subject {
@@ -686,6 +686,7 @@ section
   border: none;
   padding: 10px;
   background-color: #F0F0F0;
+  color: grey;
 }
 
 .contactForm label {
@@ -697,20 +698,27 @@ section
 }
 
 .contactForm button {
-  width: 20%;
+  width: 30%;
   border: none;
   background-color: white;
-  padding: 10px 20px;
+  padding: 10px 0;
   color: #64a604;
   font-size: 1rem;
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.contactForm i {
+  margin-left: 10px;
 }
 
 .mainHero img {
   width: 100%;
+  display: block;
   min-height: 150px;
 }
-
-
 
 
 
