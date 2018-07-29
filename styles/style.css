@@ -6,8 +6,8 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 * { box-sizing: border-box; }
 
 
-/* base styles 
-for the pages */
+
+/* BASE STYLES OF THE PAGES */
 
 html {
   font-size: 62.5%;
@@ -19,7 +19,7 @@ a {
   text-transform: uppercase;
   color: black;
   font-size: 1.2rem;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 ul {
@@ -28,27 +28,64 @@ ul {
 
 h1, h2, h3 {
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 1px;
+}
+
+h1 {
+  font-size: 3rem;
 }
 
 h2 {
   margin: 0;
+  font-size: 2rem;
 }
 
 p {
-  color: grey;
+  color: #999;
   line-height: 20px;
+  font-family: 'Lora', serif;
+  font-weight: 400;
+  font-size: 1.1rem;
 }
 
-/* end of 
-base styles */
+.footerWrapper, .mainWrapper {
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+.visuallyhidden { 
+  position: absolute; 
+  overflow: hidden; 
+  clip: rect(0 0 0 0); 
+  height: 1px; width: 1px; 
+  margin: -1px; padding: 0; border: 0; 
+}
+
+/* 
+color hexcodes:
+
+green - #64a604;
+white - #fff 
+black - #000
+grey (mostly <p> elements) - #999
+light grey - #f2f2f2
+medium grey (footer) - #2E2E2E
+dark grey (footer) - #252525
+*/
 
 
-/* **********HOME PAGE STYLES********** */
+/* END OF BASE STYLES */
 
-/* header styles 
-of the page */
+
+/* **********HOMEPAGE STYLES********** */
+
+/* 
+header 
+styles 
+of the 
+page 
+*/
 
 .headerHome {
   background-image: url(../assets/headerHero.jpeg);
@@ -57,52 +94,51 @@ of the page */
   height: 100vh;
 }
 
-
 header h1 {
   float: left;
   width: 48%;
   margin-left: 2%;
-  font-size: 3rem;
 }
 
 .headerNav {
   float: left;
-  width: 44%;
+  width: 50%;
+  margin: 0;
 }
 
-.navIcons {
+.headerNav li, .navIcons i {
   float: left;
+  margin: 4% 0;
+  padding: 0 2%;
 }
 
-.headerNav li {
-  float: left;
-  margin: 10px;
+.navIcons i {
+  font-size: 1.7rem;
 }
 
 .headerNav a:hover {
   color: #64a604;
 }
 
-.headerNav i {
-  margin: 10px;
-  font-size: 1.2rem;
+.headerNav i:hover {
+  color: #64a604;
 }
 
-.navIcons {
+.shopping {
   position: relative;
 }
 
 .number {
-  width: 10px;
-  height: 10px;
+  width: 14px;
+  height: 14px;
   border-radius: 50%;
   background-color: #64a604;
-  color: white;
-  font-size: 0.9rem;
+  color: #fff;
+  font-size: 1rem;
+  padding-left: 4px;
   position: absolute;
-  top: 15px;
-  right: 40px;
-  padding-left: 2px;
+  top: 50px;
+  right: 120px;
 }
 
 /* 
@@ -111,7 +147,9 @@ section
 styles 
 */
 
-/* recipes section styles*/
+  /* recipes section styles*/
+
+    /* top row of section */
 
 .info {
   float: left;
@@ -125,39 +163,48 @@ styles
 
 .recipePhoto img,
 .recipeCategories img {
+  display: block;
+}
+
+.recipePhoto img {
   width: 100%;
 }
 
 .info {
   text-align: center;
-  margin-top: 100px;
+  margin-top: 120px;
 }
 
-.info h2 {
-  margin-bottom: 2%;
-}
-
-.line {
+.popularRecipes h2::after {
+  content: " ";
   width: 50px;
   height: 3px;
-  margin: 0 auto;
+  margin: 15px auto;
   background-color: #64a604;
+  display: block;
 }
 
 .info p {
-  width: 70%;
-  margin: 40px auto;
+  width: 65%;
+  margin: 50px auto;
+  font-size: 1.1rem;
 }
 
 .info a {
   background-color: #64a604;
-  padding: 10px 20px;
-  color: white;
+  padding: 15px 35px;
+  color: #fff;
   font-size: 1rem;
 }
 
+.info a:hover {
+  background-color: #000;
+}
+
+    /* bottom row of recipe section */
+
 .recipeCategories {
-  background-color:	#F0F0F0;
+  background-color:	#f2f2f2;
 }
 
 .recipeCategories img {
@@ -167,45 +214,52 @@ styles
 
 .categories {
   float: left;
-  width: 46%;
-  margin: 5% 2%;
-  padding: 10px;
+  width: 42%;
+  margin: 4%;
+  padding: 8px;
 }
 
 .category {
   float: left;
-  width: 50%;
+  width: 48%;
+  margin-left: 2%;
+  margin-top: 4%;
+}
+
+.category h3 {
+  font-size: 1.4rem;
+}
+
+.category p {
+  font-size: 1rem;
 }
 
 .category i {
   float: left;
-  width: 10%;
+  width: 7%;
+  margin-right: 3%;
+  font-size: 2.5rem;
+  margin-top: 6%;
+}
+
+.category i:hover {
+  transform: scale(1.4);
 }
 
 .description {
   float: left;
   width: 86%;
-  margin-left: 2%;
-}
-
-.category i {
-  font-size: 2rem;
-  margin-top: 4%;
+  margin-left: 4%;
 }
 
 
-/* restaurant section styles */
+  /* restaurant section styles */
 
 
 .restaurants {
   margin: 0 auto;
   text-align: center;
-  padding: 100px;
-}
-
-.restaurants p {
-  width: 50%;
-  margin: 2% auto;
+  padding: 100px 0;
 }
 
 .images {
@@ -213,22 +267,36 @@ styles
 }
 
 .tables {
-  width: 30%;
+  width: 45%;
 }
 
 .logo {
-  width: 10%;
+  width: 15%;
   position: absolute;
-  top: -65px;
-  right: 350px;
+  top: -70px;
+  right: 180px;
+}
+
+.restaurants p {
+  width: 70%;
+  margin: 2% auto;
 }
 
 .restaurants h2 {
-  margin: 4% 0 2% 0;
+  margin: 6% 0 2% 0;
+}
+
+.restaurants h2::after {
+  content: " ";
+  width: 50px;
+  height: 3px;
+  margin: 25px auto;
+  background-color: #64a604;
+  display: block;
 }
 
 
-/* photo gallery section styles */
+  /* photo gallery section styles */
 
 
 .photoGallery img {
@@ -237,15 +305,10 @@ styles
 }
 
 
-/* 
-quote 
-section 
-syles 
-*/
-
+  /* quote section syles */
 
 .quote {
-  padding: 75px 0;
+  padding: 100px;
   background-color: #DDED9A;
   margin: 0 auto;
   text-align: center;
@@ -255,40 +318,56 @@ syles
   margin-bottom: 10px;
 }
 
+.quote h2::after {
+  content: " ";
+  width: 50px;
+  height: 3px;
+  margin: 15px auto;
+  background-color: #64a604;
+  display: block;
+}
+
 .quote blockquote {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-family: 'Lora', serif;
-  color:#2E2E2E;
-  width: 40%;
+  font-weight: 400;
+  font-style: italic;
+  color:#000;
   line-height: 20px;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
   margin: 40px auto;
   position: relative;
 }
 
+blockquote::before,
+blockquote::after {
+  font-size: 10rem;
+  color: #fff;
+  opacity: 0.5;
+  position: absolute;
+}
+
 blockquote::before {
   content: "“";
-  font-size: 8rem;
-  color: white;
-  position: absolute;
   top: 20px;
-  left: -40px;
+  left: -60px;
 }
 
 blockquote::after {
   content: "”";
-  font-size: 8rem;
-  color: white;
-  position: absolute;
   bottom: -10px;
-  right: -40px;
+  right: -60px;
 }
 
 .quote i {
-  color: white;
-  font-size: 2.4rem;
+  color: #fff;
+  opacity: 0.5;
+  font-size: 2.5rem;
   margin: 10px;
+}
 
+.quote i:hover {
+  opacity: 1;
 }
 
 
@@ -298,40 +377,64 @@ styles
 */
 
 
-/* top portion of the footer */
+  /* top portion of the footer */
 
 .footerTop {
   background-color: #2E2E2E;
+  padding: 40px 0;
 }
 
 .footerInfo h1 {
   margin: 0;
   color: #64a604;
+  margin-bottom: 25px;
+}
+
+.footerTop h2 {
+  color: #fff;
+  font-size: 1.5rem;
+  padding-top: 5px;
+}
+
+.footerTop p, .footerTop li {
+  color: #999;
+}
+
+.recentPosts h2 {
   margin-bottom: 30px;
+}
+
+.footerInfo,  .subscribeNow {
+  float: left;
+  width: 25%;
+}
+
+.recentPosts {
+  float: left;
+  width: 30%;
+  margin: 0 10%;
+}
+
+.footerInfo .border {
+  padding-top: 14px;
+}
+
+.footerInfo span {
+  display: block;
+}
+
+.recentPosts li {
+  padding: 10px 0;
+  font-family: 'Lora', serif;
+  font-size: 1.1rem;
 }
 
 .border {
   border-top: 1px solid	#696969;
 }
 
-.footerTop h2 {
-  color: white;
-}
-
-.footerWrapper {
-  width: 70%;
-  margin: 0 auto;
-}
-
-.footerInfo, .recentPosts, .subscribeNow {
-  float: left;
-  width: 25%;
-  margin: 5% 4%;
-}
-
-.recentPosts li {
-  color: grey;
-  padding: 7px 0;
+.subscribeNow h2 {
+  margin-bottom: 40px;
 }
 
 .subscribeEmail {
@@ -340,9 +443,11 @@ styles
 
 .subscribeNow input[type=email] {
   border: none;
-  background-color: dimgrey;
+  background-color: #696969;
+  font-family: 'Lora', serif;
+  font-style: italic;
   color: #F0F0F0;
-  padding: 10px 5px;
+  padding: 11px 5px;
   width: 75%;
   margin: 0;
 }
@@ -351,30 +456,28 @@ styles
   border: none;
   background-color: #64a604;
   width: 20%;
-  padding: 10px 5px;
+  padding: 12px 5px;
   margin: 0;
 }
 
-.footerTop h2 {
-  margin-bottom: 30px;
-}
-
 .footerTop i {
-  color: white;
+  color: #fff;
 }
 
 .icons {
-  border-top: 1px solid #696969;
   padding-top: 10px; 
+  font-size: 1.1rem;
 }
 
 .icons i {
-  font-size: 1.2rem;
   margin-right: 10px;
 }
 
+.icons i:hover {
+  transform: scale(1.5);
+}
 
-/* bottom portion of the footer */
+  /* bottom portion of the footer */
 
 .footerBottom {
   background-color: #252525;
@@ -382,7 +485,6 @@ styles
 }
 
 .footerBottom p {
-  padding-left: 30px;
   margin: 0;
 }
 
@@ -390,6 +492,11 @@ styles
   color: #64a604;
   text-transform: uppercase;
 }
+
+/* ******END OF HOMEPAGE STYLES** */
+
+
+
 
 
 /* ******BLOG PAGE STYLES******** */
@@ -409,12 +516,8 @@ section
 */
 
 
-/* recipe section styles */
+  /* recipe section styles */
 
-.wrapper {
-  width: 60%;
-  margin: 0 auto;
-}
 
 .recipes {
   margin-top: 100px;
@@ -463,13 +566,13 @@ section
 }
 
 
-/* about the blogger section styles */
+  /* about the blogger section styles */
 
 
 .blogger {
   background-color: #F0F0F0;
   width: 77%;
-  padding: 38px;
+  padding: 45px;
 }
 
 .about img, 
@@ -516,7 +619,7 @@ section
 
 .posts span {
   color: dimgrey;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .blogPosts {
@@ -525,7 +628,7 @@ section
 }
 
 
-/* comment section */
+  /* comment section */
 
 
 .comments {
@@ -547,19 +650,19 @@ section
   margin-right: 5%;
 }
 
-.comment .speech-bubble {
+.comment .speechBubble {
   float: left;
   width: 85%;
 }
 
-.speech-bubble { 
+.speechBubble { 
   position: relative; 
   background: #F0F0F0; 
   border-radius: .4em; 
   padding: 10px;
 } 
 
-.speech-bubble:after { 
+.speechBubble::after { 
   content: ''; 
   position: absolute; 
   left: 0; 
@@ -583,13 +686,9 @@ section
   margin: 5px 0;
 }
 
-.speech-bubble span,
-.speech-bubble p:nth-of-type(3) {
+.speechBubble span,
+.speechBubble p:nth-of-type(3) {
   font-weight: 600;
-}
-
-.commentForm label {
-  display: none;
 }
 
 .commentForm input[type=text] {
@@ -626,6 +725,10 @@ section
   font-weight: 600;
   text-transform: uppercase;
 }
+
+
+/* **END OF BLOG PAGE STYLES** */
+
 
 
 /* ****CONTACT PAGE STYLES**** */
