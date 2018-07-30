@@ -6,11 +6,11 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 * { box-sizing: border-box; }
 
 
-
-/* BASE STYLES OF THE PAGES */
+/* ****BASE STYLES OF THE PAGES**** */
 
 html {
   font-size: 62.5%;
+  margin: 0 auto;
   font-family: 'Raleway', sans-serif;
 }
 
@@ -64,32 +64,29 @@ p {
 
 /* 
 color hexcodes:
-
 green - #64a604;
 white - #fff 
 black - #000
 grey (mostly <p> elements) - #999
-light grey - #f2f2f2
+grey - #f6f6f6
+dark grey - #333
 medium grey (footer) - #2E2E2E
 dark grey (footer) - #252525
 
-grey (blog.html) - #f6f6f6
-dark grey (headers blog.html) - #333
-medium grey (<p> blog.html) - #999
-speech bubble grey - #efefef
 */
 
 
-/* END OF BASE STYLES */
+/* ********END OF BASE STYLES******** */
+
 
 
 /* **********HOMEPAGE STYLES********** */
 
 /* 
-header 
-styles 
-of the 
-page 
+HEADER
+STYLES
+OF THE
+PAGE
 */
 
 .headerHome {
@@ -97,6 +94,7 @@ page
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+  background-attachment: fixed;
 }
 
 header h1 {
@@ -111,45 +109,48 @@ header h1 {
   margin: 0;
 }
 
-.headerNav li, .navIcons i {
+.headerNav li {
   float: left;
   margin: 4% 0;
   padding: 0 2%;
 }
 
-.navIcons i {
+.headerNav i {
   font-size: 1.7rem;
 }
 
-.headerNav a:hover {
+.headerNav a:hover, .headerNav i:hover {
   color: #64a604;
 }
 
-.headerNav i:hover {
-  color: #64a604;
-}
-
-.shopping {
+.headerNav ul li:nth-child(8) {
   position: relative;
 }
 
 .number {
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
   background-color: #64a604;
-  color: #fff;
-  font-size: 1rem;
-  padding-left: 4px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  color: white;
   position: absolute;
-  top: 50px;
-  right: 120px;
+  top: 15%;
+  right: 15%;
+  text-align: center;
+  font-size: 1rem;
 }
 
 /* 
-main 
-section 
-styles 
+END 
+OF 
+HEADER 
+*/
+
+
+/* 
+MAIN
+SECTION
+STYLES
 */
 
   /* recipes section styles*/
@@ -180,12 +181,17 @@ styles
   margin-top: 120px;
 }
 
+.popularRecipes h2::after, .info a, 
+.restaurants h2::after, .quote h2::after, 
+.subscribeNow button {
+  background-color: #64a604;
+}
+
 .popularRecipes h2::after {
   content: " ";
   width: 50px;
   height: 3px;
   margin: 15px auto;
-  background-color: #64a604;
   display: block;
 }
 
@@ -196,7 +202,6 @@ styles
 }
 
 .info a {
-  background-color: #64a604;
   padding: 15px 35px;
   color: #fff;
   font-size: 1rem;
@@ -221,7 +226,7 @@ styles
   float: left;
   width: 42%;
   margin: 4%;
-  padding: 8px;
+  padding: 6px;
 }
 
 .category {
@@ -262,7 +267,6 @@ styles
 
 
 .restaurants {
-  margin: 0 auto;
   text-align: center;
   padding: 100px 0;
 }
@@ -296,7 +300,6 @@ styles
   width: 50px;
   height: 3px;
   margin: 25px auto;
-  background-color: #64a604;
   display: block;
 }
 
@@ -308,7 +311,6 @@ styles
   float: left;
   width: 33%;
 }
-
 
   /* quote section syles */
 
@@ -328,7 +330,6 @@ styles
   width: 50px;
   height: 3px;
   margin: 15px auto;
-  background-color: #64a604;
   display: block;
 }
 
@@ -377,8 +378,8 @@ blockquote::after {
 
 
 /* 
-footer
-styles 
+FOOTER
+STYLES
 */
 
 
@@ -451,7 +452,7 @@ styles
   background-color: #696969;
   font-family: 'Lora', serif;
   font-style: italic;
-  color: #F0F0F0;
+  color: #f6f6f6;
   padding: 11px 5px;
   width: 75%;
   margin: 0;
@@ -459,10 +460,17 @@ styles
 
 .subscribeNow button {
   border: none;
-  background-color: #64a604;
   width: 20%;
   padding: 12px 5px;
   margin: 0;
+}
+
+.subscribeNow button:hover {
+  background-color: #fff;
+}
+
+.subscribeNow button:hover i {
+  color: #000;
 }
 
 .footerTop i {
@@ -511,13 +519,14 @@ styles
   background-image: url(../assets/blogHero.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   height: 60vh;
 }
 
 /* 
-blog 
-main 
-section 
+BLOG
+MAIN
+SECTION
 */
 
 .recipes p, .about p, .blogPosts p, .comments p {
@@ -536,20 +545,19 @@ section
 }
 
 .pineappleChicken, .share {
-  border-bottom: 1px solid #F0F0F0;
+  border-bottom: 1px solid #f6f6f6;
 }
 
 .pineappleChicken p {
   padding: 5px 0;
 }
 
-.tags h3 {
+.tags h3, .tags p, .share h3, .shareIcons {
   float: left;
-  margin-right: 5px;
 }
 
-.tags p {
-  float: left;
+.tags h3 {
+  margin-right: 5px;
 }
 
 .share {
@@ -557,12 +565,10 @@ section
 }
 
 .share h3 {
-  float: left;
   margin-right: 10px;
 }
 
 .shareIcons {
-  float: left;
   padding-top: 12px;
 }
 
@@ -584,7 +590,7 @@ section
 .blogger {
   background-color: #f6f6f6;
   width: 77%;
-  padding: 45px;
+  padding: 44px;
 }
 
 .about {
@@ -604,7 +610,7 @@ section
 
 .blogPosts h2 {
   margin: 0;
-  border-top: 1px solid #F0F0F0;
+  border-top: 1px solid #f6f6f6;
   margin-bottom: 30px;
 }
 
@@ -636,7 +642,7 @@ section
 }
 
 .blogPosts {
-  border-bottom: 1px solid #F0F0F0;
+  border-bottom: 1px solid #f6f6f6;
   margin-bottom: 30px;
 }
 
@@ -669,7 +675,7 @@ section
 
 .speechBubble { 
   position: relative; 
-  background: #efefef; 
+  background: #f6f6f6; 
   border-radius: .4em; 
   padding: 10px;
 } 
@@ -682,7 +688,7 @@ section
   width: 0; 
   height: 0; 
   border: 17px solid transparent; 
-  border-right-color: #efefef; 
+  border-right-color: #f6f6f6; 
   border-left: 0; 
   border-bottom: 0; 
   margin-top: -8.5px; 
@@ -703,47 +709,43 @@ section
   font-weight: 600;
 }
 
-.commentForm input[type=text] {
-  width: 31%;
-  border: 1px solid rgba(204, 204, 204, 50);
-  font-family: 'Lora', serif;
-  float: left;
-  padding: 10px;
+.commentForm input, .commentForm textarea {
   color: #999;
   font-size: 1rem;
+  float: left;
+  padding: 10px;
+  font-family: 'Lora', serif;
+  border: 1px solid rgba(204, 204, 204, 50);
+}
+
+.commentForm input[type=text] {
+  width: 31%;
 }
 
 .commentForm input[type=email] {
   width: 32%;
-  border: 1px solid rgba(204, 204, 204, 50);
-  font-family: 'Lora', serif;
-  color: #999;
-  font-size: 1rem;
   margin: 0 3%;
-  padding: 10px;
-  float: left;
 }
 
 .commentForm textarea {
   width: 100%;
   min-height: 110px;
-  border: 1px solid rgba(204, 204, 204, 50);
-  font-family: 'Lora', serif;
-  font-size: 1rem;
   margin: 10px 0;
-  padding: 10px;
-  color: #999;
 }
 
 .commentForm button {
   width: 15%;
   background-color: #64a604;
   border: none;
-  padding: 10px 20px;
+  padding: 14px 20px;
   color: white;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: 600;
   text-transform: uppercase;
+}
+
+.commentForm button:hover {
+  background-color: black;
 }
 
 
@@ -758,20 +760,21 @@ section
   background-image: url(../assets/contactHeader.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   height: 60vh;
 }
 
-.contactForm {
+.contactForm, .contactDetails {
   float: left;
-  width: 75%;
   padding: 50px 25px;
 }
 
+.contactForm {
+  width: 75%;
+}
+
 .contactDetails {
-  float: left;
   width: 25%;
-  background-color: #F0F0F0;
-  padding: 50px 25px;
 }
 
 .formContainer {
@@ -783,9 +786,16 @@ section
   float: left;
   width: 48.5%;
   border: none;
-  background-color: #F0F0F0;
   padding: 10px;
 }
+
+.name, .formEmail, .subject {
+  color: #999;
+}
+
+.contactDetails, .name, .formEmail, .subject, .message {
+  background-color: #f6f6f6;
+} 
 
 .name {
   margin-right: 3%;
@@ -797,7 +807,6 @@ section
 
 .subject {
   border: none;
-  background-color: #F0F0F0;
   padding: 10px;
   width: 100%;
   margin: 15px 0;
@@ -808,12 +817,10 @@ section
   min-height: 175px;
   border: none;
   padding: 10px;
-  background-color: #F0F0F0;
-  color: grey;
 }
 
-.contactForm label {
-  display: none;
+.contactForm textarea {
+  color: #999;
 }
 
 .details, .hours {
@@ -821,16 +828,21 @@ section
 }
 
 .contactForm button {
-  width: 30%;
+  width: 19%;
   border: none;
   background-color: white;
   padding: 10px 0;
   color: #64a604;
   font-size: 1rem;
+  letter-spacing: 1px;
   text-align: left;
   text-transform: uppercase;
   font-weight: 600;
   margin-top: 20px;
+}
+
+.contactForm button:hover {
+  border-bottom: 3px solid #64a604;
 }
 
 .contactForm i {

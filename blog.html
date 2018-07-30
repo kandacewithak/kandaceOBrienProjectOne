@@ -15,9 +15,9 @@
 <body>
 
 <!-- 
-header 
-of the 
-page 
+HEADER
+OF THE
+PAGE 
 -->
 
   <header class="headerBlog">
@@ -30,25 +30,25 @@ page
         
   <!-- header navigation -->
             
-      <div class="headerNav">
+      <div class="headerNav clearfix">
         <nav>
           <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Recipes</a></li>
             <li><a href="#">Nutrition</a></li>
-            <li><a href="#">Blog</a></li>
+            <li><a href="blog.html">Blog</a></li>
             <li><a href="#">Shop</a></li>
             <li><a href="contact.html">Contact</a></li>
+            <li><a href="#"><i class="fas fa-shopping-bag" title="shopping bag withnumber of items"><span class="visuallyhidden">a shopping bag with the number of items indicated</span></i><p class="number">2</p></a></li>
+            <li><a href="#"><i class="fas fa-search" title="search tool"><span class="visuallyhidden">a search icon to browse the website</span></i></a></li>
           </ul>
         </nav>
+      </div>
 
-        <div class="navIcons">
-          <i class="fas fa-shopping-bag" title="shopping bag withnumber of items"><span class="visuallyhidden">a shopping bag with the number of items indicated</span></i>
-          <div class="number">2</div>
-          <i class="fas fa-search" title="search tool"><span class="visuallyhidden">a search icon to browse the website</span></i>
-        </div>
+  <!-- end of header navigation -->
     </div>
+
   </header>
       
 <!-- 
@@ -65,8 +65,13 @@ PAGE
 -->
 
   <main>
+
     <div class="mainWrapper">
+
+  <!-- recipe section -->
+
       <section class="recipes">
+
         <div class="pineappleChicken">
           <h2>Pineapple Chicken</h2>
           <p>Posted at July 11, 2018 | by Admin | in Recipes</p>
@@ -92,6 +97,8 @@ PAGE
         </div>
       </section>
 
+  <!-- about the blogger -->
+
       <section class="about clearfix">
         <img src="assets/sally.jpeg" alt="a picture of Sally Lucas, the blogger of the website Delicious">
         <div class="blogger">
@@ -99,6 +106,8 @@ PAGE
           <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach carrot root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea soko.</p>
         </div>
       </section>
+
+  <!-- blog posts -->
 
       <section class="blogPosts clearfix">
         <h2>Related Posts</h2>
@@ -121,6 +130,8 @@ PAGE
         </div>
       </section>
 
+  <!-- comments -->
+
       <section class="comments clearfix">
         <h2>02 Comments</h2>
 
@@ -141,6 +152,8 @@ PAGE
             <p>Jul 17, 2015 at 15 hours ago</p>
           </div>
         </div>
+
+    <!-- comment form -->
 
         <div class="commentForm">
           <h2>Leave a Comment</h2>
@@ -165,8 +178,11 @@ PAGE
             <button type="submit" value="Submit">Submit Comment</button></button>
           </form>
         </div>
+
       </section>
+
     </div>
+
   </main>
 
 <!-- 
