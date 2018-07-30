@@ -72,6 +72,11 @@ grey (mostly <p> elements) - #999
 light grey - #f2f2f2
 medium grey (footer) - #2E2E2E
 dark grey (footer) - #252525
+
+grey (blog.html) - #f6f6f6
+dark grey (headers blog.html) - #333
+medium grey (<p> blog.html) - #999
+speech bubble grey - #efefef
 */
 
 
@@ -515,6 +520,13 @@ main
 section 
 */
 
+.recipes p, .about p, .blogPosts p, .comments p {
+  color: #666;
+}
+
+.recipes h3, .about h3, .blogPosts h2, .blogPosts h4, .comments h2 {
+  color: #333;
+}
 
   /* recipe section styles */
 
@@ -556,7 +568,7 @@ section
 
 .shareIcons i {
   margin-right: 12px;
-  color: grey;
+  color: #999;
   font-size: 1.2rem;
 }
 
@@ -570,9 +582,13 @@ section
 
 
 .blogger {
-  background-color: #F0F0F0;
+  background-color: #f6f6f6;
   width: 77%;
   padding: 45px;
+}
+
+.about {
+  margin-bottom: 25px;
 }
 
 .about img, 
@@ -585,9 +601,6 @@ section
   margin-right: 3%;
 }
 
-.about {
-  margin-bottom: 25px;
-}
 
 .blogPosts h2 {
   margin: 0;
@@ -643,7 +656,6 @@ section
   margin-bottom: 20px;
 }
 
-
 .comment img {
   float: left;
   width: 10%;
@@ -657,7 +669,7 @@ section
 
 .speechBubble { 
   position: relative; 
-  background: #F0F0F0; 
+  background: #efefef; 
   border-radius: .4em; 
   padding: 10px;
 } 
@@ -670,7 +682,7 @@ section
   width: 0; 
   height: 0; 
   border: 17px solid transparent; 
-  border-right-color: #F0F0F0; 
+  border-right-color: #efefef; 
   border-left: 0; 
   border-bottom: 0; 
   margin-top: -8.5px; 
@@ -693,14 +705,20 @@ section
 
 .commentForm input[type=text] {
   width: 31%;
-  border: 1px solid #F0F0F0;
+  border: 1px solid rgba(204, 204, 204, 50);
+  font-family: 'Lora', serif;
   float: left;
   padding: 10px;
+  color: #999;
+  font-size: 1rem;
 }
 
 .commentForm input[type=email] {
   width: 32%;
-  border: 1px solid #F0F0F0;
+  border: 1px solid rgba(204, 204, 204, 50);
+  font-family: 'Lora', serif;
+  color: #999;
+  font-size: 1rem;
   margin: 0 3%;
   padding: 10px;
   float: left;
@@ -709,10 +727,12 @@ section
 .commentForm textarea {
   width: 100%;
   min-height: 110px;
-  border: 1px solid #F0F0F0;
+  border: 1px solid rgba(204, 204, 204, 50);
+  font-family: 'Lora', serif;
+  font-size: 1rem;
   margin: 10px 0;
   padding: 10px;
-  color: grey;
+  color: #999;
 }
 
 .commentForm button {
