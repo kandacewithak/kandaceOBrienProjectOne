@@ -58,8 +58,11 @@ p {
   position: absolute; 
   overflow: hidden; 
   clip: rect(0 0 0 0); 
-  height: 1px; width: 1px; 
-  margin: -1px; padding: 0; border: 0; 
+  height: 1px; 
+  width: 1px; 
+  margin: -1px; 
+  padding: 0; 
+  border: 0; 
 }
 
 /* 
@@ -72,7 +75,6 @@ grey - #f6f6f6
 dark grey - #333
 medium grey (footer) - #2E2E2E
 dark grey (footer) - #252525
-
 */
 
 
@@ -157,12 +159,7 @@ STYLES
 
     /* top row of section */
 
-.info {
-  float: left;
-  width: 50%;
-}
-
-.recipePhoto {
+.info, .recipePhoto {
   float: left;
   width: 50%;
 }
@@ -222,15 +219,17 @@ STYLES
   width: 50%;
 }
 
-.categories {
+.categories, .category, .category i, .description {
   float: left;
+}
+
+.categories {
   width: 42%;
   margin: 4%;
   padding: 6px;
 }
 
 .category {
-  float: left;
   width: 48%;
   margin-left: 2%;
   margin-top: 4%;
@@ -245,7 +244,6 @@ STYLES
 }
 
 .category i {
-  float: left;
   width: 7%;
   margin-right: 3%;
   font-size: 2.5rem;
@@ -257,7 +255,6 @@ STYLES
 }
 
 .description {
-  float: left;
   width: 86%;
   margin-left: 4%;
 }
@@ -375,7 +372,6 @@ blockquote::after {
 .quote i:hover {
   opacity: 1;
 }
-
 
 /* 
 FOOTER
@@ -506,9 +502,7 @@ STYLES
   text-transform: uppercase;
 }
 
-/* ******END OF HOMEPAGE STYLES** */
-
-
+/* ******END OF HOME PAGE STYLES** */
 
 
 
@@ -748,6 +742,9 @@ SECTION
   background-color: black;
 }
 
+.commentForm p {
+  color: #999;
+}
 
 /* **END OF BLOG PAGE STYLES** */
 
